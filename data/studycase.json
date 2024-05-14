@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Penilaian Nilai",
+        "description": "Program untuk menilai nilai siswa berdasarkan skala A, B, C, atau D.",
+        "materi": "Percabangan",
+        "link": "https://www.hackerrank.com/studi-kasus-penilaian-nilai"
+    },
+    {
+        "title": "Perhitungan Gaji",
+        "description": "Program untuk menghitung gaji karyawan berdasarkan jumlah jam kerja dan tarif per jam.",
+        "materi": "Perulangan",
+        "link": "https://www.hackerrank.com/studi-kasus-perhitungan-gaji"
+    },
+    {
+        "title": "Penggajian Bulanan",
+        "description": "Program untuk menghitung penggajian bulanan karyawan berdasarkan tunjangan, potongan, dan bonus.",
+        "materi": "Percabangan",
+        "link": "https://www.hackerrank.com/studi-kasus-penggajian-bulanan"
+    },
+    {
+        "title": "Pengambilan Keputusan",
+        "description": "Program untuk membantu pengambilan keputusan berdasarkan kriteria tertentu.",
+        "materi": "Percabangan",
+        "link": "https://www.hackerrank.com/studi-kasus-pengambilan-keputusan"
+    },
+    {
+        "title": "Hitung Diskon",
+        "description": "Program untuk menghitung diskon berdasarkan total belanja.",
+        "materi": "Percabangan",
+        "link": "https://www.hackerrank.com/studi-kasus-hitung-diskon"
+    },
+    {
+        "title": "Perkalian Tabel",
+        "description": "Program untuk menampilkan tabel perkalian dari 1 hingga 10.",
+        "materi": "Perulangan",
+        "link": "https://www.hackerrank.com/studi-kasus-perkalian-tabel"
+    },
+    {
+        "title": "Faktorial Bilangan",
+        "description": "Program untuk menghitung faktorial dari suatu bilangan.",
+        "materi": "Perulangan",
+        "link": "https://www.hackerrank.com/studi-kasus-faktorial-bilangan"
+    },
+    {
+        "title": "Penghitungan Luas",
+        "description": "Program untuk menghitung luas berbagai bentuk geometri.",
+        "materi": "Percabangan",
+        "link": "https://www.hackerrank.com/studi-kasus-penghitungan-luas"
+    },
+    {
+        "title": "Pencarian Data",
+        "description": "Program untuk mencari data tertentu dalam sebuah array.",
+        "materi": "Percabangan",
+        "link": "https://www.hackerrank.com/studi-kasus-pencarian-data"
+    },
+    {
+        "title": "Deret Fibonacci",
+        "description": "Program untuk menampilkan deret Fibonacci hingga suatu batas tertentu.",
+        "materi": "Perulangan",
+        "link": "https://www.hackerrank.com/studi-kasus-deret-fibonacci"
+    }
+]

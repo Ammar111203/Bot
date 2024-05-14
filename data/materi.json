@@ -1,0 +1,181 @@
+{
+  "ifElse": {
+    "title": "If-Else Statements",
+    "description": "Pernyataan if-else digunakan dalam pemrograman untuk mengontrol alur eksekusi berdasarkan kondisi tertentu. Mereka memungkinkan kita untuk membuat keputusan logis dan mengeksekusi blok kode yang berbeda tergantung pada apakah suatu kondisi benar atau salah.",
+    "structure": "```java\nif (kondisi) {\n    // blok kode yang akan dieksekusi jika kondisi benar\n} else {\n    // blok kode yang akan dieksekusi jika kondisi salah\n}\n```",
+    "explanation": [
+      {
+        "title": "Condition:",
+        "content": "Dalam if-else, kita menentukan kondisi yang akan dievaluasi. Jika kondisi benar, blok kode di dalam pernyataan if akan dieksekusi. Jika kondisi salah, blok kode di dalam pernyataan else akan dieksekusi."
+      },
+      {
+        "title": "Code Blocks:",
+        "content": "Setiap blok kode yang terkait dengan pernyataan if atau else dibungkus dalam kurung kurawal `{}`. Hanya satu blok kode yang akan dieksekusi, tergantung pada hasil evaluasi kondisi."
+      }
+    ],
+    "example": "```java\nint x = 10;\nif (x > 5) {\n    System.out.println(\"Value of x is greater than 5\");\n} else {\n    System.out.println(\"Value of x is not greater than 5\");\n}\n```"
+  },
+  "nestedIf": {
+    "title": "Nested If-Else Statements",
+    "description": "Pernyataan if-else bersarang adalah pernyataan if-else yang berada di dalam blok if atau else lainnya. Mereka memungkinkan kita untuk membuat keputusan yang bersarang dan mengeksekusi blok kode yang lebih detail berdasarkan kondisi yang lebih kompleks.",
+    "structure": "```java\nif (kondisi1) {\n    if (kondisi2) {\n        // blok kode yang akan dieksekusi jika kondisi1 dan kondisi2 benar\n    } else {\n        // blok kode yang akan dieksekusi jika kondisi1 benar tetapi kondisi2 salah\n    }\n} else {\n    // blok kode yang akan dieksekusi jika kondisi1 salah\n}\n```",
+    "explanation": [
+      {
+        "title": "Conditions:",
+        "content": "Kita menentukan beberapa kondisi yang akan dievaluasi. Struktur if-else bersarang memungkinkan kita untuk menangani berbagai kombinasi kondisi."
+      },
+      {
+        "title": "Nested Blocks:",
+        "content": "Setiap pernyataan if bersarang atau else dibungkus dalam kurung kurawal `{}` dan berada di dalam blok if atau else lainnya."
+      }
+    ],
+    "example": "```java\nint age = 25;\nif (age >= 18) {\n    if (age <= 30) {\n        System.out.println(\"You are a young adult\");\n    } else {\n        System.out.println(\"You are an adult\");\n    }\n} else {\n    System.out.println(\"You are underaged\");\n}\n```"
+  },
+  "elseIf": {
+    "title": "Else-If Statements",
+    "description": "Pernyataan else-if adalah bagian tambahan dari struktur if-else yang memungkinkan kita untuk mengevaluasi beberapa kondisi secara berurutan. Mereka memungkinkan kita untuk membuat keputusan lebih lanjut berdasarkan beberapa kemungkinan yang mungkin terjadi.",
+    "structure": "```java\nif (kondisi1) {\n    // blok kode yang akan dieksekusi jika kondisi1 benar\n} else if (kondisi2) {\n    // blok kode yang akan dieksekusi jika kondisi2 benar\n} else {\n    // blok kode yang akan dieksekusi jika semua kondisi sebelumnya salah\n}\n```",
+    "explanation": [
+      {
+        "title": "Multiple Conditions:",
+        "content": "Setiap pernyataan else-if memeriksa kondisi tertentu. Jika kondisi yang sesuai benar, blok kode yang terkait akan dieksekusi, dan eksekusi akan keluar dari seluruh struktur if-else."
+      }
+    ],
+    "example": "```java\nint score = 85;\nif (score >= 90) {\n    System.out.println(\"Your grade is A\");\n} else if (score >= 80) {\n    System.out.println(\"Your grade is B\");\n} else if (score >= 70) {\n    System.out.println(\"Your grade is C\");\n} else if (score >= 60) {\n    System.out.println(\"Your grade is D\");\n} else {\n    System.out.println(\"Your grade is E\");\n}\n```"
+  },
+    "switchCase": {
+      "title": "Switch Case Statement",
+      "description": "Pernyataan switch case adalah struktur kontrol yang digunakan untuk mengevaluasi sebuah ekspresi dan menjalankan blok kode yang berbeda berdasarkan nilai kasus yang cocok.",
+      "structure": "```java\nswitch (ekspresi) {\n    case nilai1:\n        // blok kode\n        break;\n    case nilai2:\n        // blok kode\n        break;\n    // Tambahkan lebih banyak kasus sesuai kebutuhan\n    default:\n        // blok kode\n}\n```",
+      "explanation": [
+        {
+          "title": "Expression (Ekspresi):",
+          "content": "Ekspresi yang dievaluasi dalam pernyataan switch. Nilai ekspresi dibandingkan dengan nilai kasus."
+        },
+        {
+          "title": "Cases (Kasus) and Values (Nilai):",
+          "content": "Setiap kasus mewakili nilai yang mungkin dari ekspresi. Jika nilai ekspresi cocok dengan nilai kasus, blok kode yang terkait akan dieksekusi."
+        },
+        {
+          "title": "Code Blocks (Blok Kode):",
+          "content": "Setiap blok kode untuk setiap kasus diapit oleh kurung kurawal `{}`. Blok kode akan dieksekusi jika nilai ekspresi sama dengan nilai kasus."
+        },
+        {
+          "title": "Break Statement (Pernyataan Break):",
+          "content": "Setiap kasus diikuti oleh pernyataan `break` untuk menghentikan eksekusi pernyataan switch setelah blok kode kasus yang cocok telah dieksekusi. Jika `break` tidak ada, eksekusi akan melanjutkan ke kasus berikutnya (fall-through)."
+        },
+        {
+          "title": "Default Case (Kasus Default):",
+          "content": "Kasus `default` adalah bagian opsional dari pernyataan switch case yang dieksekusi ketika tidak ada nilai kasus yang cocok dengan nilai ekspresi. Ini mirip dengan blok `else` dalam pernyataan if-else."
+        }
+      ],
+      "example": "```java\nint hari = 3;\nString namaHari;\nswitch (hari) {\n    case 1:\n        namaHari = \"Minggu\";\n        break;\n    case 2:\n        namaHari = \"Senin\";\n        break;\n    case 3:\n        namaHari = \"Selasa\";\n        break;\n    default:\n        namaHari = \"Hari tidak valid\";\n}\nSystem.out.println(\"Hari ini adalah \" + namaHari);\n```"
+    },
+    "breakDefault": {
+      "title": "Pernyataan Break dan Default",
+      "description": "Pernyataan break digunakan untuk menghentikan eksekusi dari blok switch case atau loop, sedangkan default adalah bagian opsional yang dieksekusi jika tidak ada nilai kasus yang cocok dalam switch case.",
+      "explanation": [
+        {
+          "title": "Break Statement (Pernyataan Break):",
+          "content": "Pernyataan break digunakan untuk menghentikan eksekusi dari blok switch case atau loop dan melanjutkan eksekusi kode di luar blok tersebut."
+        },
+        {
+          "title": "Default Case (Kasus Default):",
+          "content": "Kasus default adalah bagian opsional dari pernyataan switch case yang dieksekusi ketika tidak ada nilai kasus yang cocok dengan nilai ekspresi. Ini mirip dengan blok `else` dalam pernyataan if-else."
+        }
+      ],
+      "example": "```java\nswitch (nilai) {\n    case 1:\n        // blok kode\n        break;\n    case 2:\n        // blok kode\n        break;\n    default:\n        // blok kode\n}\n```"
+    },
+    "whileLoop": {
+      "title": "While Loop",
+      "description": "While loop adalah struktur pengulangan dalam pemrograman yang digunakan untuk mengeksekusi serangkaian pernyataan secara berulang berdasarkan evaluasi kondisi yang diberikan. Selama kondisi tersebut benar (true), blok kode dalam while loop akan terus dieksekusi.",
+      "structure": "```java\nwhile (kondisi) {\n    // blok kode yang akan diulang selama kondisi bernilai true\n}\n```",
+      "explanation": [
+        {
+          "title": "Kondisi:",
+          "content": "- Kondisi yang diberikan dalam while loop harus menghasilkan nilai boolean (`true` atau `false`).\n- While loop akan terus dieksekusi selama kondisi yang diberikan bernilai `true`."
+        },
+        {
+          "title": "Eksekusi Blok Kode:",
+          "content": "- Setiap kali iterasi (pengulangan) dari while loop, kondisi akan dievaluasi.\n- Jika kondisi bernilai `true`, blok kode dalam while loop akan dieksekusi."
+        },
+        {
+          "title": "Menghindari Infinite Loop:",
+          "content": "- Penting untuk memastikan bahwa kondisi dalam while loop berubah selama iterasi, sehingga pada suatu saat kondisi akan menjadi `false` dan while loop akan berhenti."
+        }
+      ],
+      "example": "```java\nint i = 1;\nwhile (i <= 5) {\n    System.out.println(\"Iterasi ke-\" + i);\n    i++;\n}\n```"
+    },
+    "doWhileLoop": {
+      "title": "Do While Loop",
+      "description": "Do while loop adalah struktur pengulangan dalam pemrograman yang mirip dengan while loop, tetapi perbedaannya terletak pada urutan evaluasi kondisi. Pada do while loop, blok kode dieksekusi terlebih dahulu, kemudian kondisi dievaluasi. Ini berarti blok kode akan dieksekusi setidaknya satu kali, bahkan jika kondisi awalnya salah.",
+      "structure": "```java\ndo {\n    // blok kode yang akan diulang\n} while (kondisi);\n```",
+      "explanation": [
+        {
+          "title": "Eksekusi Blok Kode:",
+          "content": "- Pada do while loop, blok kode dieksekusi terlebih dahulu tanpa mempertimbangkan kondisi.\n- Ini berarti blok kode akan dieksekusi setidaknya satu kali, bahkan jika kondisi awalnya salah."
+        },
+        {
+          "title": "Evaluasi Kondisi:",
+          "content": "- Setelah blok kode dieksekusi, kondisi akan dievaluasi.\n- Jika kondisi bernilai `true`, blok kode akan dieksekusi lagi. Jika kondisi bernilai `false`, eksekusi akan keluar dari loop."
+        },
+        {
+          "title": "Menghindari Infinite Loop:",
+          "content": "- Pastikan ada perubahan yang terjadi pada kondisi di dalam do while loop untuk menghindari infinite loop."
+        }
+      ],
+      "example": "```java\nint i = 1;\ndo {\n    System.out.println(\"Iterasi ke-\" + i);\n    i++;\n} while (i <= 5);\n```"
+    },
+    "forLoop": {
+      "title": "For Loop",
+      "description": "For loop adalah struktur pengulangan yang digunakan untuk mengeksekusi serangkaian pernyataan secara berulang selama kondisi tertentu terpenuhi. For loop biasanya digunakan ketika jumlah iterasi sudah diketahui sebelumnya.",
+      "structure": "```java\nfor (inisialisasi; kondisi; perubahan) {\n    // blok kode yang akan diulang\n}\n```",
+      "explanation": [
+        {
+          "title": "Inisialisasi:",
+          "content": "Bagian pertama dari for loop, di mana Anda menginisialisasi variabel loop."
+        },
+        {
+          "title": "Kondisi:",
+          "content": "Bagian kedua dari for loop, di mana Anda menentukan kondisi untuk menjalankan loop. Loop akan terus berjalan selama kondisi ini benar."
+        },
+        {
+          "title": "Perubahan:",
+          "content": "Bagian ketiga dari for loop, di mana Anda menentukan bagaimana variabel loop akan berubah setelah setiap iterasi."
+        }
+      ],
+      "example": "```java\nfor (int i = 0; i < 5; i++) {\n    System.out.println(\"Iterasi ke-\" + (i+1));\n}\n```"
+    },
+    "foreachLoop": {
+      "title": "Foreach Loop",
+      "description": "Foreach loop adalah jenis loop khusus yang digunakan untuk mengulangi elemen-elemen dalam sebuah koleksi, seperti array atau koleksi lainnya. Foreach loop berguna ketika Anda ingin menelusuri semua elemen dalam sebuah array atau koleksi tanpa perlu mengkhawatirkan indeks atau panjang koleksi.",
+      "structure": "```java\nfor (tipeData variabel : koleksi) {\n    // blok kode yang akan diulang\n}\n```",
+      "explanation": [
+        {
+          "title": "Tipe Data dan Variabel:",
+          "content": "Anda harus menentukan tipe data variabel dan nama variabel untuk menampung setiap elemen dalam koleksi."
+        },
+        {
+          "title": "Koleksi:",
+          "content": "Anda harus menyediakan koleksi dari mana elemen-elemen akan diambil untuk diulang."
+        },
+        {
+          "title": "Eksekusi Blok Kode:",
+          "content": "Setiap elemen dalam koleksi akan diambil secara berurutan dan disimpan dalam variabel yang ditentukan. Kemudian, blok kode dalam foreach loop dieksekusi untuk setiap elemen tersebut."
+        }
+      ],
+      "example": "```java\nint[] numbers = {1, 2, 3, 4, 5};\nfor (int number : numbers) {\n    System.out.println(\"Angka: \" + number);\n}\n```"
+    },
+    "continue": {
+      "title": "Pernyataan Continue",
+      "description": "Pernyataan continue digunakan untuk melanjutkan ke iterasi berikutnya dalam loop dan mengabaikan bagian dari kode yang tersisa dalam iterasi saat ini.",
+      "explanation": [
+        {
+          "title": "Continue Statement (Pernyataan Continue):",
+          "content": "Pernyataan continue digunakan untuk menghentikan iterasi saat ini dalam loop dan melanjutkan ke iterasi berikutnya."
+        }
+      ],
+      "example": "```java\nfor (int i = 0; i < 5; i++) {\n    if (i == 2) {\n        continue;\n    }\n    // blok kode yang akan dilewati jika i == 2\n}\n```"
+    }
+  }
+  
